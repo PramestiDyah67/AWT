@@ -4,9 +4,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import java.awt.Button;
+import java.awt.CardLayout;
 import java.awt.Choice;
 import java.awt.Event;
-import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.Label;
 import java.awt.Panel;
@@ -15,7 +15,7 @@ import java.awt.TextField;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
-public class TampilanAWT extends Frame implements WindowListener{
+public class TampilanAWT2 extends Frame implements WindowListener{
 	String nim;
 	String nama;
 	String jk;
@@ -28,11 +28,11 @@ public class TampilanAWT extends Frame implements WindowListener{
 	TextArea calamat;
 	Button b;
 	
-	public TampilanAWT() {
+	public TampilanAWT2() {
 		super("Data Diri");
 		Panel p = new Panel();
 		add(p);
-		p.setLayout(new FlowLayout(5, 5, 2));
+		p.setLayout(new CardLayout(7, 2));
 		
 		p.add(new Label("NIM"));
 		p.add(cnim = new TextField());
